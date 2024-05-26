@@ -15,12 +15,12 @@ func main() {
 	if len(os.Args) > 1 {
 		switch os.Args[1] {
 		case "-h":
-			fmt.Println("Usage: wpctl-dmenu")
+			fmt.Println("Usage: soundwrap")
 			fmt.Println("This program is a wrapper around wpctl that uses wofi to select the default audio sink")
 			fmt.Println("It reads the output of wpctl status and displays the sinks in a wofi dmenu")
 			fmt.Println("The selected sink is then set as the default sink using wpctl set-default")
 		case "--help":
-			fmt.Println("Usage: wpctl-dmenu")
+			fmt.Println("Usage: soundwrap")
 			fmt.Println("This program is a wrapper around wpctl that uses wofi to select the default audio sink")
 			fmt.Println("It reads the output of wpctl status and displays the sinks in a wofi dmenu")
 			fmt.Println("The selected sink is then set as the default sink using wpctl set-default")

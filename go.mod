@@ -1,3 +1,3 @@
-module github.com/Molnes/soundSwitcher
+module github.com/Molnes/soundWrap
 
 go 1.22.3
