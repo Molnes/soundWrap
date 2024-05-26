@@ -19,14 +19,17 @@ func main() {
 			fmt.Println("This program is a wrapper around wpctl that uses wofi to select the default audio sink")
 			fmt.Println("It reads the output of wpctl status and displays the sinks in a wofi dmenu")
 			fmt.Println("The selected sink is then set as the default sink using wpctl set-default")
+			os.Exit(0)
 		case "--help":
 			fmt.Println("Usage: soundwrap")
 			fmt.Println("This program is a wrapper around wpctl that uses wofi to select the default audio sink")
 			fmt.Println("It reads the output of wpctl status and displays the sinks in a wofi dmenu")
 			fmt.Println("The selected sink is then set as the default sink using wpctl set-default")
+			os.Exit(0)
 
 		default:
 			fmt.Println("Invalid flag")
+			os.Exit(1)
 		}
 
 	} else {
@@ -70,6 +73,7 @@ func main() {
 			log.Fatal(err)
 		}
 	}
+	os.Exit(0)
 }
 
 type Sink struct {
